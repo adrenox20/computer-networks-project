@@ -1,0 +1,17 @@
+Nov 24 23:11:51 dnsmasq[1]: started, version 2.91 cachesize 150
+Nov 24 23:11:51 dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus no-UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset no-nftset auth no-DNSSEC loop-detect inotify dumpfile
+Nov 24 23:11:51 dnsmasq[1]: using nameserver 1.1.1.1#53
+Nov 24 23:11:51 dnsmasq[1]: using nameserver 8.8.8.8#53
+Nov 24 23:11:51 dnsmasq[1]: cleared cache
+Nov 24 23:12:08 dnsmasq[1]: query[A] app.team1.test from 192.168.65.1
+Nov 24 23:12:08 dnsmasq[1]: config app.team1.test is 10.7.20.185
+Nov 24 23:12:13 dnsmasq[1]: query[A] app.team1.test from 192.168.65.1
+Nov 24 23:12:13 dnsmasq[1]: config app.team1.test is 10.7.20.185
+Nov 24 23:12:42 dnsmasq[1]: query[A] app.team1.test from 192.168.65.1
+Nov 24 23:12:42 dnsmasq[1]: config app.team1.test is 10.7.20.185
+Nov 24 23:12:42 dnsmasq[1]: query[A] app.team1.test from 192.168.65.1
+Nov 24 23:12:42 dnsmasq[1]: config app.team1.test is 10.7.20.185
+Nov 24 23:14:28 dnsmasq[1]: query[A] app.team1.test from 192.168.65.1
+Nov 24 23:14:28 dnsmasq[1]: config app.team1.test is 10.7.20.185
+Nov 24 23:14:28 dnsmasq[1]: query[A] app.team1.test from 192.168.65.1
+Nov 24 23:14:28 dnsmasq[1]: config app.team1.test is 10.7.20.185

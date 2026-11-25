@@ -1,0 +1,27 @@
+PHASE 2 — SERVICE ISOLATION
+Unauthorized Source Test
+
+Allowed source:
+10.7.20.185 (Mukund / Active Edge)
+
+Backend A:
+Destination: 10.7.7.82:3001
+Source tested: 10.7.7.82
+Result: DENIED
+
+Gateway log:
+connection source=10.7.7.82 destination-port=3001
+DENIED source=10.7.7.82 destination-port=3001
+
+Backend B:
+Destination: 10.7.7.82:3002
+Source tested: 10.7.7.82
+Result: DENIED
+
+Gateway log:
+connection source=10.7.7.82 destination-port=3002
+DENIED source=10.7.7.82 destination-port=3002
+
+Policy:
+Only 10.7.20.185 is permitted to access backend ports 3001 and 3002.
+Unauthorized source 10.7.7.82 was rejected.

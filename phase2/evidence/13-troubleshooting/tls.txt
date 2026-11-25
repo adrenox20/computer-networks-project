@@ -1,0 +1,6 @@
+=== TROUBLESHOOTING: TLS ===
+Wed Nov 25 07:22:42 IST 2026
+
+subject=C=IN, ST=Haryana, L=Sonipat, O=Team1, OU=Computer Networks, CN=app.team1.test
+issuer=C=IN, ST=Haryana, L=Sonipat, O=Team1, OU=CN, CN=Team1 Local CA
+Verify return code: 21 (unable to verify the first certificate)

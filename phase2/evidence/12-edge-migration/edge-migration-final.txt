@@ -1,0 +1,13 @@
+=== EDGE MIGRATION AFTER TTL EXPIRY ===
+Wed Nov 25 07:18:48 IST 2026
+
+--- DNS ---
+
+; <<>> DiG 9.10.6 <<>> @10.7.7.82 -p 5354 app.team1.test +noall +answer
+; (1 server found)
+;; global options: +cmd
+app.team1.test.		30	IN	A	10.7.7.82
+
+--- HTTPS STANDBY EDGE ---
+HTTP/1.1 200 OK
+X-Backend: A

@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+X-Backend: A
+Cache-Control: public, max-age=30
+Content-Type: application/json; charset=utf-8
+Content-Length: 127
+ETag: W/"7f-X2nkDK3lY9lSP8tNqedhP9VAa7U"
+Date: Wed, 25 Nov 2026 01:03:08 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"backend":"A","service":"Phase 2 Backend","status":"healthy","hostname":"13063037dad8","timestamp":"2026-11-25T01:03:08.562Z"}%
+
+
+
+TEST RESULT: ALLOWED
+SOURCE: Mukund Mac (10.7.20.185)
+DESTINATION: Ram Mac (10.7.7.82:3001)
+EXPECTED: Backend A reachable only through approved edge host
+OBSERVED: HTTP 200, X-Backend: A

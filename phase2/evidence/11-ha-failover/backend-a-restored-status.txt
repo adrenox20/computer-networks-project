@@ -1,0 +1,6 @@
+NAMES                   STATUS             PORTS
+phase2-backend-a        Up 4 minutes       127.0.0.1:13001->3001/tcp
+phase2-backend-b        Up 33 minutes      127.0.0.1:13002->3002/tcp
+phase2-primary-dns      Up About an hour   0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp, [::]:53->53/tcp, [::]:53->53/udp
+phase2-cache-resolver   Up About an hour   0.0.0.0:5354->53/tcp, 0.0.0.0:5354->53/udp, [::]:5354->53/tcp, [::]:5354->53/udp
+phase2-standby-nginx    Up 2 hours         0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp

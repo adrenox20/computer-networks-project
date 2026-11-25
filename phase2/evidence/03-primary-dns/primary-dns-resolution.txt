@@ -1,0 +1,45 @@
+=== Primary DNS via localhost ===
+
+; <<>> DiG 9.10.6 <<>> @127.0.0.1 app.team1.test
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58974
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;app.team1.test.			IN	A
+
+;; ANSWER SECTION:
+app.team1.test.		30	IN	A	10.7.20.185
+
+;; Query time: 6 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Wed Nov 25 04:44:28 IST 2026
+;; MSG SIZE  rcvd: 59
+
+
+=== Primary DNS via Mac IP ===
+
+; <<>> DiG 9.10.6 <<>> @10.7.7.82 app.team1.test
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 31852
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;app.team1.test.			IN	A
+
+;; ANSWER SECTION:
+app.team1.test.		30	IN	A	10.7.20.185
+
+;; Query time: 28 msec
+;; SERVER: 10.7.7.82#53(10.7.7.82)
+;; WHEN: Wed Nov 25 04:44:28 IST 2026
+;; MSG SIZE  rcvd: 59
+

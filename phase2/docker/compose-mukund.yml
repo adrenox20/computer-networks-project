@@ -1,0 +1,27 @@
+services:
+
+  edge-nginx:
+    build:
+      context: ./edge-nginx
+    container_name: phase2-edge-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - phase2-edge
+
+  backup-dns:
+    build:
+      context: ./backup-dns
+    container_name: phase2-backup-dns
+    restart: unless-stopped
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    networks:
+      - phase2-edge
+
+networks:
+  phase2-edge:
+    driver: bridge

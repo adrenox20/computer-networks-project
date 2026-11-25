@@ -1,0 +1,6 @@
+NAMES                   PORTS
+phase2-primary-dns      0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp, [::]:53->53/tcp, [::]:53->53/udp
+phase2-cache-resolver   0.0.0.0:5354->53/tcp, 0.0.0.0:5354->53/udp, [::]:5354->53/tcp, [::]:5354->53/udp
+phase2-standby-nginx    0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp
+phase2-backend-a        0.0.0.0:3001->3001/tcp, [::]:3001->3001/tcp
+phase2-backend-b        0.0.0.0:3002->3002/tcp, [::]:3002->3002/tcp

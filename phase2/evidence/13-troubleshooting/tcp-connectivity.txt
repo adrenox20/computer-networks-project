@@ -1,0 +1,10 @@
+=== TROUBLESHOOTING: TCP CONNECTIVITY ===
+Wed Nov 25 07:22:17 IST 2026
+
+
+; <<>> DiG 9.10.6 <<>> @10.7.7.82 app.team1.test +noall +answer
+; (1 server found)
+;; global options: +cmd
+app.team1.test.		30	IN	A	10.7.7.82
+
+Connection to 10.7.7.82 port 443 [tcp/https] succeeded!

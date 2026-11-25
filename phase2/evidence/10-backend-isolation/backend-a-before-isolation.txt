@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+X-Backend: A
+Cache-Control: public, max-age=30
+Content-Type: application/json; charset=utf-8
+Content-Length: 127
+ETag: W/"7f-lM889GjU0B7XTr4otg77erK4SKM"
+Date: Wed, 25 Nov 2026 00:27:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"backend":"A","service":"Phase 2 Backend","status":"healthy","hostname":"900e98863e26","timestamp":"2026-11-25T00:27:45.379Z"}

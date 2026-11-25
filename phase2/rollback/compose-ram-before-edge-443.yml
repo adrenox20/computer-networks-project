@@ -1,0 +1,65 @@
+services:
+  backend-a:
+    build:
+      context: ./backend-a
+    container_name: phase2-backend-a
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:13001:3001"
+    networks:
+      - phase2-internal
+
+  backend-b:
+    build:
+      context: ./backend-b
+    container_name: phase2-backend-b
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:13002:3002"
+    networks:
+      - phase2-internal
+
+  backend-gateway:
+    build:
+      context: ./backend-gateway
+    container_name: phase2-backend-gateway
+    restart: unless-stopped
+    networks:
+      - phase2-internal
+
+  primary-dns:
+    build:
+      context: ./primary-dns
+    container_name: phase2-primary-dns
+    restart: unless-stopped
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    networks:
+      - phase2-internal
+
+  standby-nginx:
+    build:
+      context: ./standby-nginx
+    container_name: phase2-standby-nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "8443:443"
+    networks:
+      - phase2-internal
+
+  cache-resolver:
+    build:
+      context: ./cache-resolver
+    container_name: phase2-cache-resolver
+    restart: unless-stopped
+    ports:
+      - "5354:53/udp"
+      - "5354:53/tcp"
+    networks:
+      - phase2-internal
+
+networks:
+  phase2-internal:
+    driver: bridge

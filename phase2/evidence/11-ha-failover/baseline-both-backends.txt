@@ -1,0 +1,18 @@
+===== REQUEST 1 =====
+HTTP/1.1 200 OK
+X-Backend: A
+===== REQUEST 2 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== REQUEST 3 =====
+HTTP/1.1 200 OK
+X-Backend: A
+===== REQUEST 4 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== REQUEST 5 =====
+HTTP/1.1 200 OK
+X-Backend: A
+===== REQUEST 6 =====
+HTTP/1.1 200 OK
+X-Backend: B

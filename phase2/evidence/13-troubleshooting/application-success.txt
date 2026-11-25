@@ -1,0 +1,16 @@
+=== TROUBLESHOOTING: APPLICATION ===
+Wed Nov 25 07:23:06 IST 2026
+
+HTTP/1.1 200 OK
+Server: nginx/1.29.8
+Date: Wed, 25 Nov 2026 01:53:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 127
+Connection: keep-alive
+X-Powered-By: Express
+X-Backend: A
+Cache-Control: public, max-age=30
+ETag: W/"7f-7jAe4k5iHWIAUdkqkeq3GWf1fm0"
+Cache-Control: no-store
+
+{"backend":"A","service":"Phase 2 Backend","status":"healthy","hostname":"13063037dad8","timestamp":"2026-11-25T01:53:06.344Z"}

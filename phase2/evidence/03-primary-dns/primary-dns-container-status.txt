@@ -1,0 +1,5 @@
+CONTAINER ID   IMAGE                  COMMAND                  CREATED         STATUS         PORTS                                                                                NAMES
+bbc873c20d4a   docker-standby-nginx   "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp   phase2-standby-nginx
+900e98863e26   docker-backend-a       "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   0.0.0.0:3001->3001/tcp, [::]:3001->3001/tcp                                          phase2-backend-a
+3d4bdd9c64e9   docker-backend-b       "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   0.0.0.0:3002->3002/tcp, [::]:3002->3002/tcp                                          phase2-backend-b
+47a9c957264b   docker-primary-dns     "dnsmasq --no-daemon…"   2 minutes ago   Up 2 minutes   0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp, [::]:53->53/tcp, [::]:53->53/udp             phase2-primary-dns

@@ -1,0 +1,49 @@
+===== RECOVERY REQUEST 1 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== RECOVERY REQUEST 2 =====
+HTTP/1.1 200 OK
+X-Backend: A
+===== RECOVERY REQUEST 3 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== RECOVERY REQUEST 4 =====
+HTTP/1.1 200 OK
+X-Backend: A
+===== RECOVERY REQUEST 5 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== RECOVERY REQUEST 6 =====
+HTTP/1.1 200 OK
+X-Backend: A
+===== RECOVERY REQUEST 7 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== RECOVERY REQUEST 8 =====
+HTTP/1.1 200 OK
+X-Backend: A
+===== RECOVERY REQUEST 9 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== RECOVERY REQUEST 10 =====
+HTTP/1.1 200 OK
+X-Backend: A
+
+
+
+
+
+PHASE 2 D — HA RECOVERY
+
+Backend A was stopped to simulate failure.
+The service continued through Backend B.
+
+Backend A was then restarted.
+Backend A returned HTTP 200 and rejoined the backend pool.
+
+The active NGINX edge was able to use the recovered backend again.
+
+Final state:
+Backend A — healthy
+Backend B — healthy
+Active Edge — Mukund Mac (10.7.20.185)

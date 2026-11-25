@@ -1,0 +1,26 @@
+[2026-11-25T06:30:19.964015] BACKEND 3001 -> 127.0.0.1:13001
+[2026-11-25T06:30:19.964297] BACKEND 3002 -> 127.0.0.1:13002
+Exception in thread Thread-1 (listen_on_port):
+Exception in thread Thread-2 (listen_on_port):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rambhardwaj/computer-networks-project/phase2/scripts/backend-isolation-gateway.py", line 136, in listen_on_port
+    f"-> {target_ip}:{port} "
+          ^^^^^^^^^
+  File "/Users/rambhardwaj/computer-networks-project/phase2/scripts/backend-isolation-gateway.py", line 136, in listen_on_port
+    f"-> {target_ip}:{port} "
+          ^^^^^^^^^
+NameError: name 'target_ip' is not defined. Did you mean: 'target'?
+NameError: name 'target_ip' is not defined. Did you mean: 'target'?

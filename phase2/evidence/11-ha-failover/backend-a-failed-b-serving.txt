@@ -1,0 +1,41 @@
+===== FAILOVER REQUEST 1 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== FAILOVER REQUEST 2 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== FAILOVER REQUEST 3 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== FAILOVER REQUEST 4 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== FAILOVER REQUEST 5 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== FAILOVER REQUEST 6 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== FAILOVER REQUEST 7 =====
+HTTP/1.1 200 OK
+X-Backend: B
+===== FAILOVER REQUEST 8 =====
+HTTP/1.1 200 OK
+X-Backend: B
+
+
+PHASE 2 D — HA FAILOVER
+
+Failure injected:
+Backend A (10.7.7.82:3001) was stopped.
+
+Expected behavior:
+NGINX should stop sending traffic to the failed backend and continue using healthy Backend B.
+
+Observed:
+HTTPS service remained available through the active edge NGINX.
+Successful responses were served by:
+X-Backend: B
+
+Conclusion:
+Backend B maintained service availability after Backend A failure.

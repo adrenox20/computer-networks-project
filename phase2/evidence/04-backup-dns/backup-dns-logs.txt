@@ -1,0 +1,10 @@
+CONTAINER ID   IMAGE               COMMAND                  CREATED         STATUS         PORTS                                                                      NAMES
+21d2cd9f6fb4   docker-backup-dns   "dnsmasq --no-daemon…"   9 minutes ago   Up 6 minutes   0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp, [::]:53->53/tcp, [::]:53->53/udp   phase2-backup-dns
+mukundmangla@Mukunds-MacBook-Pro phase2 % cat ~/phase2-backup-dns-logs.txt
+Nov 24 23:22:43 dnsmasq[1]: started, version 2.91 cachesize 150
+Nov 24 23:22:43 dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus no-UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset no-nftset auth no-DNSSEC loop-detect inotify dumpfile
+Nov 24 23:22:43 dnsmasq[1]: using nameserver 1.1.1.1#53
+Nov 24 23:22:43 dnsmasq[1]: using nameserver 8.8.8.8#53
+Nov 24 23:22:43 dnsmasq[1]: cleared cache
+Nov 24 23:23:37 dnsmasq[1]: query[A] app.team1.test from 192.168.65.1
+Nov 24 23:23:37 dnsmasq[1]: config app.team1.test is 10.7.20.185

@@ -1,0 +1,12 @@
+{
+  "name": "phase2-backend-a",
+  "version": "1.0.0",
+  "description": "Phase 2 Backend A",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE               COMMAND                  CREATED         STATUS         PORTS                                                                      NAMES
+21d2cd9f6fb4   docker-backup-dns   "dnsmasq --no-daemon…"   9 minutes ago   Up 6 minutes   0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp, [::]:53->53/tcp, [::]:53->53/udp   phase2-backup-dns

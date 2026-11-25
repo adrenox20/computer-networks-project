@@ -1,0 +1,90 @@
+[2026-11-25T06:26:00.581918] BACKEND phase2-backend-a -> 172.18.0.5:3001
+[2026-11-25T06:26:00.605035] BACKEND phase2-backend-b -> 172.18.0.3:3002
+[2026-11-25T06:26:00.605522] LISTENING 0.0.0.0:3002 -> 172.18.0.3:3002 allowed-source=10.7.20.185
+[2026-11-25T06:26:00.605532] LISTENING 0.0.0.0:3001 -> 172.18.0.5:3001 allowed-source=10.7.20.185
+[2026-11-25T06:27:19.053563] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:27:19.061990] ALLOWED source=10.7.20.185 destination-port=3002 target=172.18.0.3:3002
+[2026-11-25T06:27:19.171605] UPSTREAM ERROR source=10.7.20.185 port=3002 error=[Errno 61] Connection refused
+[2026-11-25T06:30:19.964015] BACKEND 3001 -> 127.0.0.1:13001
+[2026-11-25T06:30:19.964297] BACKEND 3002 -> 127.0.0.1:13002
+[2026-11-25T06:31:54.106805] BACKEND 3001 -> 127.0.0.1:13001
+[2026-11-25T06:31:54.107039] BACKEND 3002 -> 127.0.0.1:13002
+[2026-11-25T06:32:46.531369] Starting Phase 2 backend isolation gateway
+[2026-11-25T06:32:46.531575] BACKEND 3001 -> 127.0.0.1:13001
+[2026-11-25T06:32:46.531628] BACKEND 3002 -> 127.0.0.1:13002
+[2026-11-25T06:32:46.531837] LISTENING 0.0.0.0:3002 -> 127.0.0.1:13002 allowed-source=10.7.20.185
+[2026-11-25T06:32:46.531828] LISTENING 0.0.0.0:3001 -> 127.0.0.1:13001 allowed-source=10.7.20.185
+[2026-11-25T06:33:01.897021] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:33:01.898009] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:33:08.545402] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:33:08.546651] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:39:06.939745] connection source=10.7.7.82 destination-port=3001
+[2026-11-25T06:39:06.945039] DENIED source=10.7.7.82 destination-port=3001
+[2026-11-25T06:39:46.105789] connection source=10.7.7.82 destination-port=3001
+[2026-11-25T06:39:46.109492] DENIED source=10.7.7.82 destination-port=3001
+[2026-11-25T06:39:56.119190] connection source=10.7.7.82 destination-port=3002
+[2026-11-25T06:39:56.119815] DENIED source=10.7.7.82 destination-port=3002
+[2026-11-25T06:49:37.044550] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:49:37.048554] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:49:42.039343] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:49:42.040188] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:50:24.891982] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:50:24.893102] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:50:26.068458] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:50:26.069612] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:50:27.168692] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:50:27.170173] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:50:28.265903] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:50:28.266467] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:50:29.355266] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:50:29.356341] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:50:30.470880] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:50:30.472331] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:54:56.023253] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:54:56.028041] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:54:56.031703] UPSTREAM ERROR source=10.7.20.185 port=3001 error=[Errno 61] Connection refused
+[2026-11-25T06:54:56.045688] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:54:56.046008] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:54:57.130606] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:54:57.131558] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:54:58.247608] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:54:58.248310] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:54:58.250127] UPSTREAM ERROR source=10.7.20.185 port=3001 error=[Errno 61] Connection refused
+[2026-11-25T06:54:58.267509] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:54:58.268055] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:54:59.373044] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:54:59.373957] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:55:00.502687] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:55:00.503600] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:55:01.729042] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:55:01.730169] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:55:02.813306] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:55:02.813907] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:55:03.895014] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:55:03.896103] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:58:58.824167] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:58:58.830301] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:59:01.039994] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:59:01.040955] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:59:03.140444] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:59:03.141033] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:59:05.219429] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:59:05.221236] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:59:07.392376] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:59:07.392963] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:59:09.539493] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:59:09.540197] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:59:11.628743] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:59:11.630040] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:59:13.738454] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:59:13.739617] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T06:59:15.843237] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T06:59:15.843942] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002
+[2026-11-25T06:59:17.936557] connection source=10.7.20.185 destination-port=3001
+[2026-11-25T06:59:17.937148] ALLOWED source=10.7.20.185 destination-port=3001 target=127.0.0.1:13001
+[2026-11-25T07:03:22.114846] connection source=10.7.7.82 destination-port=3001
+[2026-11-25T07:03:22.119420] DENIED source=10.7.7.82 destination-port=3001
+[2026-11-25T07:03:22.128864] connection source=10.7.7.82 destination-port=3002
+[2026-11-25T07:03:22.129130] DENIED source=10.7.7.82 destination-port=3002
+[2026-11-25T07:08:15.584740] connection source=10.7.20.185 destination-port=3002
+[2026-11-25T07:08:15.590075] ALLOWED source=10.7.20.185 destination-port=3002 target=127.0.0.1:13002

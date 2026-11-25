@@ -1,0 +1,5 @@
+NAME                   IMAGE                  COMMAND                  SERVICE         CREATED         STATUS         PORTS
+phase2-backend-a       docker-backend-a       "docker-entrypoint.s…"   backend-a       4 minutes ago   Up 4 minutes   0.0.0.0:3001->3001/tcp, [::]:3001->3001/tcp
+phase2-backend-b       docker-backend-b       "docker-entrypoint.s…"   backend-b       4 minutes ago   Up 4 minutes   0.0.0.0:3002->3002/tcp, [::]:3002->3002/tcp
+phase2-primary-dns     docker-primary-dns     "dnsmasq --no-daemon…"   primary-dns     4 minutes ago   Up 4 minutes   0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp, [::]:53->53/tcp, [::]:53->53/udp
+phase2-standby-nginx   docker-standby-nginx   "/docker-entrypoint.…"   standby-nginx   4 minutes ago   Up 4 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp
